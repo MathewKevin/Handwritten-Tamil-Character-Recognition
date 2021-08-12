@@ -46,7 +46,7 @@ function predictImage(img) {
     }).then(resp => resp.text())
     .then(data => {
         const myguess = document.getElementById("myguess");
-        myguess.textContent = "My guess:"
+        myguess.textContent = "Prediction (கணிப்பு):"
         
         console.log(data);
         var strings = data.split(" ");
